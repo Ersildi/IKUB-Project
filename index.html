@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IKUB-Project</title>
+    <link rel="stylesheet" href="signinup.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,57 +19,178 @@
     ></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 offset-3">
-          <div class="card">
-            <div class="card-header">
-              <h2>Create Account</h2>
-            </div>
-
-            <form>
-              <h3>Enter Details</h3>
-              <div class="row mb-3">
-                <div>
-                  <label for="userName" class="form-label"
-                    >Enter your username</label
-                  >
-                  <input
-                    type="text"
-                    name="userName"
-                    class="form-control"
-                    id="userName"
+    <div class="container">
+      <div class="forms-signin-signup">
+        <div class="card text-center mb-3" style="width: 20rem">
+          <div class="card-body">
+            <h3 class="card-title">Sign in</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <label for="usernameSignIn"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQBJREFUSEtjZKAxYKSx+QzEWmAAdEg9EINoELgAxI1QGq8bibEgAGjCehymBALFN+CzgZAFAkDN94EYRGMDH4CCikAMorECQhbgcz3MQEcg4wC5FjRAwx5fKIDiAqRucPoAFPYPgJgfhwM/AsUVKIkDkLk0TUUwh4PSPyickfMBiA/KD3gBoVRESD9B+QG1ABTB+dA4gAUNuotBQQTKyRNxRTQuHyQANfQDMa4cjG4RKCcnQi1DkcNmAcjw+QQDF7sCjLIJ3QJCZQ8hezHKJnQLQEkPVCxTAlCKDnQLQJGmT4npQL0gMwxhZqBb8J9CwzHMpbsFVPIAwpgBzclU8Q0AWrEoGXI53JsAAAAASUVORK5CYII="
+                /></label>
+                <input
+                  type="text"
+                  placeholder="Username"
+                  class="username-sign-in"
+                  name="usernameSignIn"
+                  id="userNameSignIn"
+                  required
+                />
+              </li>
+              <li class="list-group-item">
+                <label for="passwordSingIn"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANlJREFUSEtjZKAxYKSx+QzEWhAAdEg+EDtAHXQASDcCMYjGC4ixYAHQhHgcpoAsacBnAyELQC5fDzWgEEhvgLITgHQ9lO2IzyeELAAFgT0QgwyfgOZSkMtBlhwEYgdcviBkwX+oRkEg/QHNEAUg/z5UDKc5xFqASx3MASPMAlCEzQdiUBiTAh4AFSeipyhsYQdSKE+KyUhqQXoVkfViswAWcWTagVo6jFqALRhRQmU0iAZnEIFKTX4yM8FD9BIAWySDiooFZORmkOEJxBQVZDoeuzZC9QHFlgEALRgoGfx5RQsAAAAASUVORK5CYII="
+                /></label>
+                <input
+                  type="passowrd"
+                  placeholder="Password"
+                  class="password-Sign-In"
+                  name="passwordSignIn"
+                  id="passwordSingIn"
+                  required
+                />
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Sign in</a>
+          </div>
+          <div class="card-body">
+            <label for="">Or you sign in with social platforms</label>
+            <div class="social-media">
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVxJREFUSEu1lYEVATEMhpnACJgAEzACEzgTYAJMgAkwATa4EdiADZiA//eufVFt0/Pe5b08d22TL01yUa9VLPWK/ddSABmC6EO7hTKmS6En/J5jQcYAQxiuoS3lljfsz6GE/UgIsMHJacn00YagL/EB/nFunG7xMJMEF8C0HCOR3wsHMh1LrC2EzUimywUwn80A4Il1FppnpLgA7rfNAQnIsLiLRH/AHs8YGeCB3cVfqhR7CwnY48Q4Alhhj9FStFTaYCSAvd1JBBAk8+6a0VePixLwijjnlryBBrC+UwDa157DG2vhysdOGt/w7usgDfCAXcPxfsU7O+4LsMe7r8gawJdab5EzAGJtWqYGE/hiwD/TNJSmMkXm194yKSszKlJvEB0VBIeGXQpAHXbmZr6CawB3lHx8aX84vI1p3RDAN2Ft12otyIPsrgE0N50RWLNO5UMKwGuYulg54A2yZUkZZ4eyLAAAAABJRU5ErkJggg=="
                   />
-                </div>
-
-                <div>
-                  <label for="email" class="form-label"
-                    >Enter your email address</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="name@example.com"
-                  />
-                </div>
-
-                <div>
-                  <label for="password" class="password"
-                    >Enter your password</label
-                  >
-                  <input
-                    type="password"
-                    name="password"
-                    class="form-control"
-                    id="password"
-                  />
-                </div>
+                </a>
               </div>
-            </form>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvdleFRAkEMhaEC6QA7ECoAK1ArQCtAKlAqwBKuA7UC7UDs4KhAqADzMbvMXm43t3cz94ebyTCzSd5LXnbDcNDzN+wZf3B5BCORbN8gGzFLsXuxiVgpVoitXR7nHx5DS0QwAVuD5Ft8s4ifHAhXYm8xApw/roMH+QVIfz4mxQ/JryM4Fak7OAaZVEHboWR09250d3AKnIvTBGh3pwA4w0qxqdjGIPh0BOeQkIDhXTuwsQFiuej4NQzQBH8dgX1aZcCxGSBD1+rBQ8LKDdQz4JYwoKsOneycxJXU2Krgpiz0sDIIa/LEJOJsLvaVARiGUD3d17ZAatlxE15akNw6aWsp1jbl2vLYkMv6nsRZpAJSBMjkF1oql1f7bIHrGQBKxTcZ0vBiAS+bYmMdPEoSZAzNk7HAGGC4NpqwT/7L+0fLartNUO8S/QPCnzgZqDHpnwAAAABJRU5ErkJggg=="
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWRJREFUSEvNlY1NwzAQhdMN2IAwAWxA2QAmoEwAnYAyAbBBmAA2oEwAbBA2oBO076ts6TBnO0UK6kmn/Pjy3t07+zJpRrbJyPjNXhBMVeWp/CT4ga4fwR917UsqlCoA6F4+q8j4ovUr+bcXlyMg22d5O7BHVHIzlIDM3zPgbwEEyaI9lar0Kuj0waUBWAUApLC20APJuJnHwJRgqoXXBJx3NPVPlhKQ1a1ButB9mvlORCnBUl9bfT0JiVkXWOa24hSg1+Jh+JiGIk9qJXBi7+QosbV/Jxgqka2KnXSc61utyej5UOkq69cm5kj3SO1KhOZ2m3L8z+S5bcqJJ54qsC95axPydkmaESQLOePA2kwPzKoIzhozqasRxGkZd5ONpxIIqTS1T72goh9WGnYcMI/EwW4Ah/TXRK2Na6SxDfTAGXbMo53GtQWi7HN5GyRAwl6+lHfh3iPevtuLX2Y2uyELo1ewAfRYQBlbMMNVAAAAAElFTkSuQmCC"
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQJJREFUSEtjZKAxYKSx+QzYLFACWvoPiB9Qw3J0CyYBDc2FGtwLpEsotQTZAnWgYTfQDFQA8h9SYgkhCxQpDSr0IJoKNDAL6uIJQLqQEteD9GKLZDVoJN+h1HBsFjgABf9DDf4IpC9A2QZAmh9NXADI1wdikB6QuovYghPdBzDDQWYdhGoGsQ8AsT3UApB4AxCvB2KQJcgAJN6ILECOBQ+gBqMbDjPXEeogMJ8cC9AcjcHdCBQJgImSawGyIQlAw+YjWQPyISh5U+QDQ6BuWAIAGfQBiGGJACVkyPUBur4DQFNhiWDUAqxxNxpEKEUFtgxKdBARyqUkyw9IpU+yK/FpAACsgEoZ8ljwrwAAAABJRU5ErkJggg=="
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="card text-center mb-3" style="width: 20rem">
+          <div class="card-body">
+            <h3 class="card-title">Sign up</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <label for="username"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQBJREFUSEtjZKAxYKSx+QzEWmAAdEg9EINoELgAxI1QGq8bibEgAGjCehymBALFN+CzgZAFAkDN94EYRGMDH4CCikAMorECQhbgcz3MQEcg4wC5FjRAwx5fKIDiAqRucPoAFPYPgJgfhwM/AsUVKIkDkLk0TUUwh4PSPyickfMBiA/KD3gBoVRESD9B+QG1ABTB+dA4gAUNuotBQQTKyRNxRTQuHyQANfQDMa4cjG4RKCcnQi1DkcNmAcjw+QQDF7sCjLIJ3QJCZQ8hezHKJnQLQEkPVCxTAlCKDnQLQJGmT4npQL0gMwxhZqBb8J9CwzHMpbsFVPIAwpgBzclU8Q0AWrEoGXI53JsAAAAASUVORK5CYII="
+                /></label>
+                <input
+                  type="text"
+                  placeholder="Username"
+                  class="username-singup"
+                  name="userName"
+                  id="userName"
+                  required
+                />
+              </li>
+              <li class="list-group-item">
+                <label for="name"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAN1JREFUSEtjZKAxYKSx+QyjFhAMYVxBJADU2Q/EAVATNgDpQiD+QNBENAW4LLgAVKePphYkZkgNC0CuXo/DoECgOMg3IPCfgGVgx2PzQQNQvB6H5kagOEieIguI9QFRoUVKHFwEmmhAlKlIivCloglAdcipqABLKsIXDzjjgBRHkmUByNX5QOyAZtMBIB8UySCaaIAeRAuAOuMJ6EZOSQQtQrYAX+pBN8gRySe4ggkjDkBetyfoJIiCg0hBSLQFhHImut1EFfXIimhuAZGhQ5oyorxJmpGoqkctIBh6AJX6IRkSVGIuAAAAAElFTkSuQmCC"
+                /></label>
+                <input
+                  type="text"
+                  placeholder="Name & Surname"
+                  class="name"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </li>
+              <li class="list-group-item">
+                <label for="email"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAP1JREFUSEvtVe0NgjAQhQnUCRxBnURH0A10AtxER9BNdAOcQJ1A32t65FKvFEH+EEkulPbu3kcp5FnPV95z/2xYACvYVSDmHW0rUb9DnNhHW8SFacfmUn7BYBECvPzqGfdlSyBd68hrBQLAOdp1RIwaAj2Rt/a26D4mwASJD8TYg6TUkDWbS83dk4oqYOJGNqlGjWbNnlR98MQqdyyLxBW+BQSy1ISs2ZgA+ooq0EmWGq67V9Bg/TWApYZz3B+LdWsAFooajrXXgTPVYyOLYsVN5v8ASZc+LCpR8quP3RW93FdZHzQelD1iluRWn3DD8lbOyrD+aB2dsct7t+gNoBg2GfAsrvwAAAAASUVORK5CYII="
+                /></label>
+                <input
+                  type="email"
+                  placeholder="email"
+                  class="email"
+                  name="email"
+                  id="email"
+                />
+              </li>
+              <li class="list-group-item">
+                <label for="password"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANlJREFUSEtjZKAxYKSx+QzEWhAAdEg+EDtAHXQASDcCMYjGC4ixYAHQhHgcpoAsacBnAyELQC5fDzWgEEhvgLITgHQ9lO2IzyeELAAFgT0QgwyfgOZSkMtBlhwEYgdcviBkwX+oRkEg/QHNEAUg/z5UDKc5xFqASx3MASPMAlCEzQdiUBiTAh4AFSeipyhsYQdSKE+KyUhqQXoVkfViswAWcWTagVo6jFqALRhRQmU0iAZnEIFKTX4yM8FD9BIAWySDiooFZORmkOEJxBQVZDoeuzZC9QHFlgEALRgoGfx5RQsAAAAASUVORK5CYII="
+                /></label>
+                <input
+                  type="passowrd"
+                  placeholder="Password"
+                  class="password"
+                  name="password"
+                  required
+                />
+              </li>
+            </ul>
+            <a href="#" class="btn btn-primary">Sign in</a>
+          </div>
+          <div class="card-body">
+            <label for="">Or you can register with social platforms</label>
+            <div class="social-media">
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVxJREFUSEu1lYEVATEMhpnACJgAEzACEzgTYAJMgAkwATa4EdiADZiA//eufVFt0/Pe5b08d22TL01yUa9VLPWK/ddSABmC6EO7hTKmS6En/J5jQcYAQxiuoS3lljfsz6GE/UgIsMHJacn00YagL/EB/nFunG7xMJMEF8C0HCOR3wsHMh1LrC2EzUimywUwn80A4Il1FppnpLgA7rfNAQnIsLiLRH/AHs8YGeCB3cVfqhR7CwnY48Q4Alhhj9FStFTaYCSAvd1JBBAk8+6a0VePixLwijjnlryBBrC+UwDa157DG2vhysdOGt/w7usgDfCAXcPxfsU7O+4LsMe7r8gawJdab5EzAGJtWqYGE/hiwD/TNJSmMkXm194yKSszKlJvEB0VBIeGXQpAHXbmZr6CawB3lHx8aX84vI1p3RDAN2Ft12otyIPsrgE0N50RWLNO5UMKwGuYulg54A2yZUkZZ4eyLAAAAABJRU5ErkJggg=="
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEvdleFRAkEMhaEC6QA7ECoAK1ArQCtAKlAqwBKuA7UC7UDs4KhAqADzMbvMXm43t3cz94ebyTCzSd5LXnbDcNDzN+wZf3B5BCORbN8gGzFLsXuxiVgpVoitXR7nHx5DS0QwAVuD5Ft8s4ifHAhXYm8xApw/roMH+QVIfz4mxQ/JryM4Fak7OAaZVEHboWR09250d3AKnIvTBGh3pwA4w0qxqdjGIPh0BOeQkIDhXTuwsQFiuej4NQzQBH8dgX1aZcCxGSBD1+rBQ8LKDdQz4JYwoKsOneycxJXU2Krgpiz0sDIIa/LEJOJsLvaVARiGUD3d17ZAatlxE15akNw6aWsp1jbl2vLYkMv6nsRZpAJSBMjkF1oql1f7bIHrGQBKxTcZ0vBiAS+bYmMdPEoSZAzNk7HAGGC4NpqwT/7L+0fLartNUO8S/QPCnzgZqDHpnwAAAABJRU5ErkJggg=="
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWRJREFUSEvNlY1NwzAQhdMN2IAwAWxA2QAmoEwAnYAyAbBBmAA2oEwAbBA2oBO076ts6TBnO0UK6kmn/Pjy3t07+zJpRrbJyPjNXhBMVeWp/CT4ga4fwR917UsqlCoA6F4+q8j4ovUr+bcXlyMg22d5O7BHVHIzlIDM3zPgbwEEyaI9lar0Kuj0waUBWAUApLC20APJuJnHwJRgqoXXBJx3NPVPlhKQ1a1ButB9mvlORCnBUl9bfT0JiVkXWOa24hSg1+Jh+JiGIk9qJXBi7+QosbV/Jxgqka2KnXSc61utyej5UOkq69cm5kj3SO1KhOZ2m3L8z+S5bcqJJ54qsC95axPydkmaESQLOePA2kwPzKoIzhozqasRxGkZd5ONpxIIqTS1T72goh9WGnYcMI/EwW4Ah/TXRK2Na6SxDfTAGXbMo53GtQWi7HN5GyRAwl6+lHfh3iPevtuLX2Y2uyELo1ewAfRYQBlbMMNVAAAAAElFTkSuQmCC"
+                  />
+                </a>
+              </div>
+              <div class="social-icon">
+                <a href="#">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQJJREFUSEtjZKAxYKSx+QzYLFACWvoPiB9Qw3J0CyYBDc2FGtwLpEsotQTZAnWgYTfQDFQA8h9SYgkhCxQpDSr0IJoKNDAL6uIJQLqQEteD9GKLZDVoJN+h1HBsFjgABf9DDf4IpC9A2QZAmh9NXADI1wdikB6QuovYghPdBzDDQWYdhGoGsQ8AsT3UApB4AxCvB2KQJcgAJN6ILECOBQ+gBqMbDjPXEeogMJ8cC9AcjcHdCBQJgImSawGyIQlAw+YjWQPyISh5U+QDQ6BuWAIAGfQBiGGJACVkyPUBur4DQFNhiWDUAqxxNxpEKEUFtgxKdBARyqUkyw9IpU+yK/FpAACsgEoZ8ljwrwAAAABJRU5ErkJggg=="
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      <div class="panels-container">
+        <div class="left-panel"></div>
+        <div class="right-panel"></div>
       </div>
     </div>
   </body>
