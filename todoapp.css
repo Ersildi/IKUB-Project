@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* border: solid 2px black; */
+  width: 600px;
+  /* margin: auto; */
+  margin-top: 50px;
+  text-align: center;
+  background-color: skyblue;
+  border-radius: 20px;
+}
+
+.input-btn {
+  display: flex;
+  padding: 10px;
+}
+
+.todo-inputbox {
+  width: 75%;
+  margin-right: 25px;
+  border-radius: 10px;
+  padding: 10px;
+}
