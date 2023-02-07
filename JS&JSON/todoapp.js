@@ -29,7 +29,7 @@ list.addEventListener(
   false
 );
 
-// Funksion per te shtuar TODO
+// Funksion per te shtuar tasks
 
 function newTask() {
   // Kemi krijuar nje thirrje js qe krijon nje element liste
