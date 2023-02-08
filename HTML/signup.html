@@ -93,36 +93,50 @@
                       Sign up
                     </p>
 
-                    <form class="mx-1 mx-md-4">
+                    <form class="mx-1 mx-md-4" id="register-form">
                       <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input
+                          type="text"
+                          placeholder="Username"
+                          id="usernameRegister"
+                          required
+                        />
                       </div>
 
                       <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          id="emailRegister"
+                          required
+                        />
                       </div>
 
                       <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          id="passowrd register"
+                          required
+                        />
                       </div>
 
                       <div
                         class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"
                       >
                         <button
-                          type="button"
+                          type="submit"
                           id="btn_register"
                           class="btn btn-primary btn-lg"
-                          onclick="regsiter();"
                         >
                           Register
                         </button>
                         <p class="small fw-bold mt-2 pt-1 mb-0">
                           You are part of us?
-                          <a href="/login.html" class="link-danger">
+                          <a href="/HTML/login.html" class="link-danger">
                             <br />
                             Sign in</a
                           >
