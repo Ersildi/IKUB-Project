@@ -1,0 +1,16 @@
+{
+    "signin": [
+      {
+        "id": 1,
+        "username": "",
+        "password": ""
+      }
+    ],
+    "register": [
+      {
+        "id": 1,
+        "username": "",
+        "password": ""
+      }
+    ]
+  }
